@@ -1,16 +1,16 @@
 #! /usr/bin/env python3
 #
-# 2020-04-20 
+# 2020-05-04
 # Colton Grainger 
 # CC-0 Public Domain
 
 """
-Prototypical Image Archive
+2020-05-04 acceptance test
 """
 
 from context import imagearchive
 from imagearchive.schema import Base, Archive, Platform, Document, Image
-from imagearchive.config import setup_directories, setup_database_engine
+from imagearchive.core import setup_directories, setup_database_engine
 from sqlalchemy.orm import sessionmaker
 from datetime import datetime, date
 

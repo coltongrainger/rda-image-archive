@@ -170,7 +170,6 @@ def get_normalized_catalog(ingest_dir, overwrite=False):
         if normalized_catalog['media_type'].startswith("image"):
             normalized_catalog['uuid'] = assign_uuid(str(parent), overwrite=overwrite)
 
-    breakpoint()
     return normalized_catalog
 
 def tail_flatten_list(flat_list, nested_lists):
